@@ -47,11 +47,11 @@ public class WeatherService {
                         JsonNode listNode = rootNode.path("list");
                         ArrayNode filteredList = objectMapper.createArrayNode();
 
-                        /* OpenWeather API'sinden gelen hava durumu tahmini verileri,
-                        genellikle 3 saatlik aralıklarla sunulur.
-                        Bu nedenle; bir gün için 24 saat / 3 saat = 8 zaman dilimi bulunur.
-                        Dolayısıyla; 48 saatlik bir tahmin için ihtiyaç duyulan zaman dilimi sayısı,
-                         48 saat / 3 saat = 16 zaman dilimidir. */
+                        /* Weather forecast data from OpenWeather API,
+                        usually offered in 3-hour intervals.
+                        In that case, there are 24 hours / 3 hours = 8 time zones in a day.
+                        Therefore, the number of time periods needed for a 48-hour forecast,
+                         48 hours / 3 hours = 16 time periods. */
 
                         for (int i = 0; i < 16; i++) {
                             JsonNode item = listNode.get(i);
