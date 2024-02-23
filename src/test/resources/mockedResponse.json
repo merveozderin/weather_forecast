@@ -1,0 +1,23 @@
+{
+  "list": [
+    {
+      "main": [
+        {
+          "temp_max": 270.96,
+          "feels_like": 264.72,
+          "humidity": 97
+        },
+        {
+          "temp_max": 271.36,
+          "feels_like": 265.22,
+          "humidity": 96
+        },
+        {
+          "temp_max": 272.56,
+          "feels_like": 266.65,
+          "humidity": 96
+        }
+      ]
+    }
+  ]
+}
